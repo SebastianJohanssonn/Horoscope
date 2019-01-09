@@ -4,18 +4,18 @@
     function myHoroscope($month, $day){
         //FM = First month. LM = Last month, FD = First day. LD = Last day.
         $allHoroscopes = array(
-            "vattumannenFM" => 01,  "vattumannenLM" => 02,  "vattumannenFD" => 21,  "vattumannenLD" => 18,
-            "fiskarnaFM"    => 02,  "fiskarnaLM"    => 03,  "fiskarnaFD"    => 19,  "fiskarnaLD"    => 20,
-            "vädurenFM"     => 03,  "vädurenLM"     => 04,  "vädurenFD"     => 21,  "vädurenLD"     => 20,
-            "oxenFM"        => 04,  "oxenLM"        => 05,  "oxenFD"        => 21,  "oxenLD"        => 21,
-            "tvillingFM"    => 05,  "tvillingLM"    => 06,  "tvillingFD"    => 22,  "tvillingLD"    => 21,
-            "kräftanFM"     => 06,  "kräftanLM"     => 07,  "kräftanFD"     => 22,  "kräftanLD"     => 22,
-            "lejonetFM"     => 07,  "lejonetLM"     => 08,  "lejonetFD"     => 23,  "lejonetLD"     => 23,
-            "jungfrunFM"    => 08,  "jungfrunLM"    => 09,  "jungfrunFD"    => 24,  "jungfrunLD"    => 22,
-            "vågenFM"       => 09,  "vågenLM"       => 10,  "vågenFD"       => 23,  "vågenLD"       => 23,
-            "skorpionenFM"  => 10,  "skorpionenLM"  => 11,  "skorpionenFD"  => 24,  "skorpionenLD"  => 22,
-            "skyttenFM"     => 11,  "skyttenLM"     => 12,  "skyttenFD"     => 23,  "skyttenLD"     => 21,
-            "stenbockenFM"  => 12,  "stenbockenLM"  => 01,  "stenbockenFD"  => 22,  "stenbockenLD"  => 20
+            "vattumannenFM" => 1,   "vattumannenLM" => 2,  "vattumannenFD" => 21,  "vattumannenLD" => 18,
+            "fiskarnaFM"    => 2,   "fiskarnaLM"    => 3,  "fiskarnaFD"    => 19,  "fiskarnaLD"    => 20,
+            "vädurenFM"     => 3,   "vädurenLM"     => 4,  "vädurenFD"     => 21,  "vädurenLD"     => 20,
+            "oxenFM"        => 4,   "oxenLM"        => 5,  "oxenFD"        => 21,  "oxenLD"        => 21,
+            "tvillingFM"    => 5,   "tvillingLM"    => 6,  "tvillingFD"    => 22,  "tvillingLD"    => 21,
+            "kräftanFM"     => 6,   "kräftanLM"     => 7,  "kräftanFD"     => 22,  "kräftanLD"     => 22,
+            "lejonetFM"     => 7,   "lejonetLM"     => 8,  "lejonetFD"     => 23,  "lejonetLD"     => 23,
+            "jungfrunFM"    => 8,   "jungfrunLM"    => 9,  "jungfrunFD"    => 24,  "jungfrunLD"    => 22,
+            "vågenFM"       => 9,   "vågenLM"       => 10, "vågenFD"       => 23,  "vågenLD"       => 23,
+            "skorpionenFM"  => 10,  "skorpionenLM"  => 11, "skorpionenFD"  => 24,  "skorpionenLD"  => 22,
+            "skyttenFM"     => 11,  "skyttenLM"     => 12, "skyttenFD"     => 23,  "skyttenLD"     => 21,
+            "stenbockenFM"  => 12,  "stenbockenLM"  => 1,  "stenbockenFD"  => 22,  "stenbockenLD"  => 20
             
         );
 
