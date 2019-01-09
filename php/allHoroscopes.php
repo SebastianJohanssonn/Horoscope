@@ -68,6 +68,9 @@
         || $month == $allHoroscopes["stenbockenLM"] && $day <= $allHoroscopes["stenbockenLD"]){
             $yourHoroscope = "<h3>Stenbock</h3>";
         }
+        if(isset($yourHoroscope)){
+            return $yourHoroscope;
+        }
 
     }
 ?>
