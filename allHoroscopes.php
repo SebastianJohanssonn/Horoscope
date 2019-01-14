@@ -22,39 +22,39 @@
         //Second part of the function, checking wich sign you are using if statements.
         if($month == $allHoroscopes["vattumannenFM"] && $day >= $allHoroscopes["vattumannenFD"] 
         || $month == $allHoroscopes["vattumannenLM"] && $day <= $allHoroscopes["vattumannenLD"]){
-            $yourHoroscope = "<h3>Vattuman</h3>";
+            $horoscope = "<h3>Vattuman</h3>";
         }
         if($month == $allHoroscopes["fiskarnaFM"] && $day >= $allHoroscopes["fiskarnaFD"] 
         || $month == $allHoroscopes["fiskarnaLM"] && $day <= $allHoroscopes["fiskarnaLD"]){
-            $yourHoroscope = "<h3>Fisk</h3>";
+            $horoscope = "<h3>Fisk</h3>";
         }
         if($month == $allHoroscopes["vädurenFM"] && $day >= $allHoroscopes["vädurenFD"] 
         || $month == $allHoroscopes["vädurenLM"] && $day <= $allHoroscopes["vädurenLD"]){
-            $yourHoroscope = "<h3>Vädur</h3>";
+            $horoscope = "<h3>Vädur</h3>";
         }
         if($month == $allHoroscopes["oxenFM"] && $day >= $allHoroscopes["oxenFD"] 
         || $month == $allHoroscopes["oxenLM"] && $day <= $allHoroscopes["oxenLD"]){
-            $yourHoroscope = "<h3>Oxe</h3>";
+            $horoscope = "<h3>Oxe</h3>";
         }
         if($month == $allHoroscopes["tvillingFM"] && $day >= $allHoroscopes["tvillingFD"] 
         || $month == $allHoroscopes["tvillingLM"] && $day <= $allHoroscopes["tvillingLD"]){
-            $yourHoroscope = "<h3>Tvilling</h3>";
+            $horoscope = "<h3>Tvilling</h3>";
         }
         if($month == $allHoroscopes["kräftanFM"] && $day >= $allHoroscopes["kräftanFD"] 
         || $month == $allHoroscopes["kräftanLM"] && $day <= $allHoroscopes["kräftanLD"]){
-            $yourHoroscope = "<h3>Kräftan</h3>";
+            $horoscope = "<h3>Kräftan</h3>";
         }
         if($month == $allHoroscopes["lejonetFM"] && $day >= $allHoroscopes["lejonetFD"] 
         || $month == $allHoroscopes["lejonetLM"] && $day <= $allHoroscopes["lejonetLD"]){
-            $yourHoroscope = "<h3>Lejon</h3>";
+            $$horoscope = "<h3>Lejon</h3>";
         }
         if($month == $allHoroscopes["jungfrunFM"] && $day >= $allHoroscopes["jungfrunFD"] 
         || $month == $allHoroscopes["jungfrunLM"] && $day <= $allHoroscopes["jungfrunLD"]){
-            $yourHoroscope = "<h3>Jungfru</h3>";
+            $horoscope = "<h3>Jungfru</h3>";
         }
         if($month == $allHoroscopes["vågenFM"] && $day >= $allHoroscopes["vågenFD"] 
         || $month == $allHoroscopes["vågenLM"] && $day <= $allHoroscopes["vågenLD"]){
-            $yourHoroscope = "<h3>Våg</h3>";
+            $horoscope = "<h3>Våg</h3>";
         }
         if($month == $allHoroscopes["skorpionenFM"] && $day >= $allHoroscopes["skorpionenFD"] 
         || $month == $allHoroscopes["skorpionenLM"] && $day <= $allHoroscopes["skorpionenLD"]){
@@ -62,14 +62,14 @@
         }
         if($month == $allHoroscopes["skyttenFM"] && $day >= $allHoroscopes["skyttenFD"] 
         || $month == $allHoroscopes["skyttenLM"] && $day <= $allHoroscopes["skyttenLD"]){
-            $yourHoroscope = "<h3>Skytt</h3>";
+            $horoscope = "<h3>Skytt</h3>";
         }
         if($month == $allHoroscopes["stenbockenFM"] && $day >= $allHoroscopes["stenbockenFD"] 
         || $month == $allHoroscopes["stenbockenLM"] && $day <= $allHoroscopes["stenbockenLD"]){
-            $yourHoroscope = "<h3>Stenbock</h3>";
+            $horoscope = "<h3>Stenbock</h3>";
         }
-        if(isset($yourHoroscope)){
-            return $yourHoroscope;
+        if(isset($horoscope)){
+            return $horoscope;
         }
 
     }
