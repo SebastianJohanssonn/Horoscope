@@ -34,7 +34,7 @@
         }
         if($month == $allHoroscopes["oxenFM"] && $day >= $allHoroscopes["oxenFD"] 
         || $month == $allHoroscopes["oxenLM"] && $day <= $allHoroscopes["oxenLD"]){
-            $yourHoroscope = "<h3>oxe</h3>";
+            $yourHoroscope = "<h3>Oxe</h3>";
         }
         if($month == $allHoroscopes["tvillingFM"] && $day >= $allHoroscopes["tvillingFD"] 
         || $month == $allHoroscopes["tvillingLM"] && $day <= $allHoroscopes["tvillingLD"]){
