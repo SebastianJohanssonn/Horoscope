@@ -12,12 +12,13 @@ $(document).ready(function(){
         })
     };
     showHoroscope();
+    
 
     $("#save").on("click", function(){ saveHoroscope(); });
+    var birthDate = $("#date").val();
     
     //Function to save your birthdate via AJAX using the POST method, if sucessfull, show your sign.
     function saveHoroscope(){
-        var birthDate = $("#date").val();
         if (birthDate !== ""){
             $.ajax(
                 {
@@ -30,8 +31,25 @@ $(document).ready(function(){
             )
             .done(function(data){
                 showHoroscope();
-                console.log(data);
-            })
+                
+            });
         }
+    }
+    
+
+    $("#delete").on("click", function(){ deleteHoroscope(); });
+
+    //Function that makes you delete the current horoscope using the DELETE method.
+    function deleteHoroscope(){
+        $.ajax(
+            {
+                method: 'DELETE',
+                url: "php/deleteHoroscope.php"
+            }
+        )
+        .done(function(data){
+            showHoroscope();
+        });
+        
     }
 });
