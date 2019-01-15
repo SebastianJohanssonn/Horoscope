@@ -46,7 +46,7 @@
         }
         if($month == $allHoroscopes["lejonetFM"] && $day >= $allHoroscopes["lejonetFD"] 
         || $month == $allHoroscopes["lejonetLM"] && $day <= $allHoroscopes["lejonetLD"]){
-            $$horoscope = "<h3>Lejon</h3>";
+            $horoscope = "<h3>Lejon</h3>";
         }
         if($month == $allHoroscopes["jungfrunFM"] && $day >= $allHoroscopes["jungfrunFD"] 
         || $month == $allHoroscopes["jungfrunLM"] && $day <= $allHoroscopes["jungfrunLD"]){
@@ -58,7 +58,7 @@
         }
         if($month == $allHoroscopes["skorpionenFM"] && $day >= $allHoroscopes["skorpionenFD"] 
         || $month == $allHoroscopes["skorpionenLM"] && $day <= $allHoroscopes["skorpionenLD"]){
-            $yourHoroscope = "<h3>Skorpion</h3>";
+            $horoscope = "<h3>Skorpion</h3>";
         }
         if($month == $allHoroscopes["skyttenFM"] && $day >= $allHoroscopes["skyttenFD"] 
         || $month == $allHoroscopes["skyttenLM"] && $day <= $allHoroscopes["skyttenLD"]){
@@ -68,9 +68,9 @@
         || $month == $allHoroscopes["stenbockenLM"] && $day <= $allHoroscopes["stenbockenLD"]){
             $horoscope = "<h3>Stenbock</h3>";
         }
+        
         if(isset($horoscope)){
             return $horoscope;
         }
-
     }
 ?>

@@ -19,7 +19,6 @@ $(document).ready(function(){
     //Function to save your birthdate via AJAX using the POST method, if successfull, show your sign.
     function saveHoroscope(){
         var birthDate = $("#date").val();
-        console.log(birthDate)
         $.ajax(
             {
                 url: './addHoroscope.php',
@@ -27,8 +26,7 @@ $(document).ready(function(){
                 data: {
                     birthDate: birthDate
                 },
-                success: function(msg){
-                    $('.result').html(msg);
+                success: function(data){
                     showHoroscope();
                 }
             }
@@ -43,8 +41,8 @@ $(document).ready(function(){
             {
                 url: "./deleteHoroscope.php",
                 method: 'DELETE',
-                success: function(msg){
-                    $('.result').html(msg);
+                success: function(data){
+                    $('.result').html(data);
 
                 }
             }
@@ -55,6 +53,7 @@ $(document).ready(function(){
 
     //Function that updates the current horoscope to a new one.
     function updateHoroscope(){
+        var birthDate = $("#date").val();
             $.ajax(
                 {
                     url: "./updateHoroscope.php",
@@ -62,10 +61,8 @@ $(document).ready(function(){
                     data: {
                         birthDate: birthDate
                     },
-                    success: function(msg){
-                        $(".result").html(msg);
+                    success: function(data){
                         showHoroscope();
-                        console.log(msg);
                     }
                 }
             );
