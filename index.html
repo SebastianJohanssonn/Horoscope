@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Horoscope</title>
 </head>
 <body>
-    <div class="form">
-        
-        <h1>Mitt horoskop:</h1>
-        
-        <h3>Födelsedatum:</h3>
-        <input type="text" name="birthDate" value="" placeholder="ÅÅMMDD" id="date"><br>
-        <br>
-        <button id="save">Spara horoskop</button><br><br>
-        <button id="update">Uppdatera horoskop</button><br><br>
-        <button id="delete">Radera horoskop</button><br><br>
-    </div>
-    <img src="images/horoscope.jpg">
-    <!--Button results-->
-    <div class="result">
-        
-        
+    <div class="content">
+        <div class="form">
+            
+            <h1>Mitt horoskop:</h1>
+            
+            <h3>Födelsedatum:</h3>
+            <input type="text" name="birthDate" value="" placeholder="ÅÅMMDD" id="date"><br>
+            <br>
+            <button id="save">Spara horoskop</button><br><br>
+            <button id="update">Uppdatera horoskop</button><br><br>
+            <button id="delete">Radera horoskop</button><br><br>
+        </div>
+        <img src="images/horoscope.png" class="horoscope">
+        <!--Button results-->
+        <div class="result">
+            
+            
+        </div>
     </div>
     
     <script src="./script1.js"></script>

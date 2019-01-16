@@ -19,6 +19,7 @@ $(document).ready(function(){
     //Function to save your birthdate via AJAX using the POST method, if successfull, show your sign.
     function saveHoroscope(){
         var birthDate = $("#date").val();
+            
         $.ajax(
             {
                 url: './addHoroscope.php',
