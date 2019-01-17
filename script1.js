@@ -43,8 +43,7 @@ $(document).ready(function(){
                 url: "./deleteHoroscope.php",
                 method: 'DELETE',
                 success: function(data){
-                    $('.result').html(data);
-
+                    $(".result").html(data);
                 }
             }
         );

@@ -6,8 +6,7 @@
         if(isset($_SESSION['horoscope'])){
             echo $_SESSION['horoscope'];
         }else {
-            echo "false";
-            exit;
+            echo "<h2>False</h2>";
         }
     }
 ?>
