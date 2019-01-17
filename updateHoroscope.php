@@ -10,8 +10,8 @@
         
         if(isset($_SESSION["horoscope"])){
             $_SESSION["horoscope"] = myHoroscope($month, $day);
-        }else {
-            echo "<h3>False</h3>";
+        }elseif(!isset($_SESSION['horoscope'])) {
+            echo "<h2>False</h2>";
         }      
     }
 ?>

@@ -11,7 +11,7 @@
         if(!isset($_SESSION['horoscope'])){
             $_SESSION['horoscope'] = myHoroscope($month, $day);
         }else {
-            echo "<h3>false</h3>";
+            $_SESSION['horoscope'] = "<h2>False</h2>";
         }
     }
 ?>
